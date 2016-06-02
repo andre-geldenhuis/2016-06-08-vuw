@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "Victoria University"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "1-21 Kelburn Parade"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "Laby 118 Kelburn Campus"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "New Zealand"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-41.29074,174.76810"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
@@ -10,9 +10,9 @@ humandate: "June 8th 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-06-08      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2016-06-08        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Andre Geldenhuis"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Leo Browning","Felicia Ullstad","Matthias Meyer"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "andre.geldenhuis@vuw.ac.nz"      # contact email address for workshop organizer, such as "grace@hopper.org"
+instructor: ["Andre Geldenhuis","Leo Browning"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Felicia Ullstad","Matthias Meyer"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "leo.browning@vuw.ac.nz"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad: https://goo.gl/JnGhVQ  # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -100,10 +100,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
 
@@ -158,7 +154,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p id="contact">
   <strong>Contact</strong>:
-  Please mail
+  Please email
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
@@ -192,9 +188,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>10:45</td>  <td>Building programs with Python</td> </tr>
       <tr> <td>13:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>16:00</td>  <td>Data pipelines: getting started</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>14:45</td>  <td>Get a working data pipeline going</td> </tr>
+      <tr> <td>14:00</td>  <td>Data pipelines: getting started</td> </tr>
+      <tr> <td>15:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>15:45</td>  <td>Get a working data pipeline going</td> </tr>
       <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -663,7 +659,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 
   <!-- Uncomment this section if you are using our virtual machine. -->
-
+<!--
 <div id="vm">
   <h3>Virtual Machine</h3>
 
@@ -686,4 +682,4 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       loading the <code>.ova</code> file.
     </li>
   </ol>
-</div>
+</div> -->
